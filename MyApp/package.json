@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "^9.1.12",
     "@angular/router": "^9.1.12",
     "@servicestack/angular": "0.0.8",
-    "@servicestack/client": "^1.0.32",
+    "@servicestack/client": "^1.0.51",
     "bootstrap": "^4.5.2",
     "core-js": "^3.6.5",
     "rxjs": "^6.6.3",
