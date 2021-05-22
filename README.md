@@ -10,6 +10,12 @@
 
     $ x new angular-spa ProjectName
 
+Alternatively write new project files directly into an empty repository, using the Directory Name as the ProjectName:
+
+    $ git clone https://github.com/<User>/<ProjectName>.git
+    $ cd <ProjectName>
+    $ x new angular-spa
+
 ## Development workflow
 
 Our recommendation during development is to run the `dev` npm script or Gulp task and leave it running in the background:
