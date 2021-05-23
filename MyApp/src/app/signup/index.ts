@@ -12,33 +12,33 @@ import { Routes } from '../shared';
             <h3>Register New User</h3>
 
             <form (ngSubmit)="submit()" [className]="cls({ error:responseStatus, loading:loading })">
-                <div class="form-group">
+                <div class="mb-3">
                     <error-summary except="displayName,email,password,confirmPassword" [responseStatus]="responseStatus"></error-summary>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-input name="displayName" [(ngModel)]="displayName" [responseStatus]="responseStatus"
                               placeholder="Display Name" label="Name" help="Your first and last name"></ng-input>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-input name="email" [(ngModel)]="email" [responseStatus]="responseStatus"
                               placeholder="Email" label="Email"></ng-input>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-input type="password" name="password" [(ngModel)]="password" [responseStatus]="responseStatus"
                               placeholder="Password" label="Password"></ng-input>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-input type="password" name="confirmPassword" [(ngModel)]="confirmPassword" [responseStatus]="responseStatus"
                               placeholder="Confirm" label="Confirm Password"></ng-input>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-checkbox name="autoLogin" [(ngModel)]="autoLogin" [responseStatus]="responseStatus">
                         Auto Login
                     </ng-checkbox>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-button type="submit" lg primary>Register</ng-button>
-                    <link-button href="/signin" navItemClass="btn">Sign In</link-button>
+                    <link-button href="/signin" lg navItemClass="btn">Sign In</link-button>
                 </div>
 
                 <div class="pt-3">

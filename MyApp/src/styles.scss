@@ -32,7 +32,7 @@ a.nav-link:hover {
 link-button + link-button,button + link-button {
     padding-left: .25rem;
 }
-.btn-lg + [lg] {
+[lg] + [lg], .btn-lg + [lg] {
     padding-left: .5rem;
 }
 nav-button-group > div {
