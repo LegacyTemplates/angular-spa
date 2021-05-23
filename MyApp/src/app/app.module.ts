@@ -48,7 +48,7 @@ export const routes: NgRoutes = [
       redirectTo: '/',
       pathMatch: 'full'
   },
-  { path: '', component: HomeComponent, data: { title: 'Home', name: 'Angular 9' } },
+  { path: '', component: HomeComponent, data: { title: 'Home', name: 'Angular 12' } },
   { path: 'about', component: AboutComponent, data: { message: 'About page' } },
   { path: 'signin', component: SignInComponent },
   { path: 'signup', component: SignUpComponent },

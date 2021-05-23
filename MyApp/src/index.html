@@ -9,16 +9,15 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-
-  <i hidden>
-  {{ 'buttons,svg-auth,app' | cssIncludes }}
-  {{ 'svg-icons'            | cssIncludes | svgFill('#df2127') }}
-  {{#script}}
-    {{ '/js/hot-fileloader.js'    | onlyIfDebug | includeFile }}
-    NAV_ITEMS = {{ 'GetNavItems'  | execService | json }};
-    AUTH      = {{ 'Authenticate' | execService({ ifErrorReturn: "null" }) | json }};
-  {{/script}}
-  </i>
+<i hidden>
+{{ 'buttons,svg-auth,app' | cssIncludes }}
+{{ 'svg-icons'            | cssIncludes | svgFill('#df2127') }}
+{{#script}}
+  {{ '/js/hot-fileloader.js'    | onlyIfDebug | includeFile }}
+  NAV_ITEMS = {{ 'GetNavItems'  | execService | json }};
+  AUTH      = {{ 'Authenticate' | execService({ ifErrorReturn: "null" }) | json }};
+{{/script}}
+</i>
 
   <style>
     .btn-social i:before {
@@ -37,7 +36,7 @@
         <img src="{{'servicestack'.svgDataUri('#333')}}" style="height:32px">
         <a href="https://servicestack.net/vs-templates/angular-spa">Learn about this Angular template</a>
     </h4>
-    <div>Copyright &copy; {{ now |> dateFormat('yyyy') }}</div>
+    <div>Copyright &copy; {{ now.dateFormat('yyyy') }}</div>
   </div>
 
 </body>

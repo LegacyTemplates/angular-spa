@@ -12,23 +12,23 @@ import { Routes } from '../shared';
             <h3>Sign In</h3>
             
             <form (ngSubmit)="submit()" [className]="cls({ error:responseStatus, loading:loading })">
-                <div class="form-group">
+                <div class="mb-3">
                     <error-summary except="userName,password" [responseStatus]="responseStatus"></error-summary>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-input name="userName" [(ngModel)]="userName" placeholder="Username" [responseStatus]="responseStatus" 
                               label="Email" help="Email you signed up with"></ng-input>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-input type="password" name="password" [(ngModel)]="password" placeholder="Password" [responseStatus]="responseStatus" 
                               label="Password" help="6 characters or more"></ng-input>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <ng-checkbox name="rememberMe" [(ngModel)]="rememberMe" [responseStatus]="responseStatus">
                         Remember Me
                     </ng-checkbox>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <button type="submit" class="btn btn-lg btn-primary">Login</button>
                     <link-button href="/signup" lg outline-secondary class="ml-2">Register New User</link-button>
                 </div>
@@ -42,12 +42,10 @@ import { Routes } from '../shared';
                 </p>
             </div>
         </div>
-
+        <div class="col-3"></div>
         <div class="col-5">
-            <div class="row justify-content-end mt-5">
-                <div class="col col-8">
-                    <nav-button-group [items]="nav.navItemsMap.auth" [attributes]="userAttributes" [baseHref]="nav.baseUrl" block lg></nav-button-group>
-                </div>
+            <div class="row justify-content-end mt-5" style="max-width:300px">
+                <nav-button-group [items]="nav.navItemsMap.auth" [attributes]="userAttributes" [baseHref]="nav.baseUrl" block lg></nav-button-group>
             </div>
         </div>
     </div>
