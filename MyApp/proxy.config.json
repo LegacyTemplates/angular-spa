@@ -1,6 +1,6 @@
 {
     "/": {
-       "target": "http://localhost:5000",
-       "secure": false
+       "target": "https://localhost:5001",
+       "secure": true
     }
  }
