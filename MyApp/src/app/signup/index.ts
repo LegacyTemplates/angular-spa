@@ -38,7 +38,7 @@ import { Routes } from '../shared';
                 </div>
                 <div class="mb-3">
                     <ng-button type="submit" lg primary>Register</ng-button>
-                    <link-button href="/signin" lg navItemClass="btn">Sign In</link-button>
+                    <link-button href="/signin" lg navItemClass="btn ms-2">Sign In</link-button>
                 </div>
 
                 <div class="pt-3">

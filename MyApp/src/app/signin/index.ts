@@ -30,7 +30,7 @@ import { Routes } from '../shared';
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-lg btn-primary">Login</button>
-                    <link-button href="/signup" lg outline-secondary class="ml-2">Register New User</link-button>
+                    <link-button href="/signup" lg outline-secondary class="ms-2">Register New User</link-button>
                 </div>
             </form>
             
@@ -38,7 +38,7 @@ import { Routes } from '../shared';
                 <h5>Quick Login:</h5>
                 <p class="btn-group">
                     <link-button outline-info sm (click)="switchUser('admin@email.com')">admin@email.com</link-button>
-                    <link-button outline-info sm (click)="switchUser('new@user.com')">new@user.com</link-button>
+                    <link-button outline-info sm (click)="switchUser('new@user.com')" class="ms-2">new@user.com</link-button>
                 </p>
             </div>
         </div>
