@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>latest</TypeScriptToolsVersion>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
    
