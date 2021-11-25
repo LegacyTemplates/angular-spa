@@ -97,6 +97,7 @@ jobs:
         env:
           RELEASE_VERSION: ${{ env.TAG_NAME }}
           IMAGE_REPO: ${{ env.image_repository_name }}
+          APP_NAME: ${{ github.event.repository.name }}
           HOST_DOMAIN: ${{ env.domain }}
           LETSENCRYPT_EMAIL: ${{ env.letsencrypt_email }}
         with:
