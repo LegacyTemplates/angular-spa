@@ -18,7 +18,7 @@
         "@angular/platform-browser-dynamic": "^12.0.2",
         "@angular/router": "^12.0.2",
         "@servicestack/angular": "^0.0.15",
-        "@servicestack/client": "^1.0.54",
+        "@servicestack/client": "^1.0.57",
         "bootstrap": "^5.0.1",
         "core-js": "^3.13.0",
         "zone.js": "^0.11.4"
@@ -2063,9 +2063,9 @@
       }
     },
     "node_modules/@servicestack/client": {
-      "version": "1.0.54",
-      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.0.54.tgz",
-      "integrity": "sha512-U+z4QAN8lLhWRvzYWML0bI4wNmdZuxC0Y/FpXVX/s3SfnorDtICJ3CBL3h3s6nxXHX7APeerSd48YsfSP9/E6w==",
+      "version": "1.0.57",
+      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.0.57.tgz",
+      "integrity": "sha512-iPqZlRYsiS6+Ynz2Z2VQG7F7f0DhPSYABuv3JQRUnAsd5Ky7s2REYT1Wco4V03/iAzxvFtc20HZRVKhbWpyeBw==",
       "dependencies": {
         "cross-fetch": "^3.1.0",
         "es6-shim": "^0.35.6",
@@ -21030,9 +21030,9 @@
       }
     },
     "@servicestack/client": {
-      "version": "1.0.54",
-      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.0.54.tgz",
-      "integrity": "sha512-U+z4QAN8lLhWRvzYWML0bI4wNmdZuxC0Y/FpXVX/s3SfnorDtICJ3CBL3h3s6nxXHX7APeerSd48YsfSP9/E6w==",
+      "version": "1.0.57",
+      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.0.57.tgz",
+      "integrity": "sha512-iPqZlRYsiS6+Ynz2Z2VQG7F7f0DhPSYABuv3JQRUnAsd5Ky7s2REYT1Wco4V03/iAzxvFtc20HZRVKhbWpyeBw==",
       "requires": {
         "cross-fetch": "^3.1.0",
         "es6-shim": "^0.35.6",

@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-  
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
@@ -7,12 +7,11 @@
     <TypeScriptToolsVersion>latest</TypeScriptToolsVersion>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
-   
+
   <Target Name="Bundle" BeforeTargets="BeforePublish">
-    <Exec Command="npm install --also=dev" />
-    <Exec Command="npm run-script build" />
+    <Exec Command="npm run build" />
   </Target>
-  
+
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
@@ -20,7 +19,7 @@
   <ItemGroup>
     <PackageReference Include="ServiceStack" Version="5.*" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\MyApp.ServiceInterface\MyApp.ServiceInterface.csproj" />
     <ProjectReference Include="..\MyApp.ServiceModel\MyApp.ServiceModel.csproj" />
