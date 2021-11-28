@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <Target Name="Bundle" BeforeTargets="BeforePublish">
-    <Exec Command="npm run build" />
+    <Exec Command="npm install --also=dev" />
   </Target>
 
   <ItemGroup>
