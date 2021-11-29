@@ -8,10 +8,6 @@
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
 
-  <Target Name="Bundle" BeforeTargets="BeforePublish">
-    <Exec Command="npm install --also=dev" />
-  </Target>
-
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
