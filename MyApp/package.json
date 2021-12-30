@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "^12.0.2",
     "@angular/router": "^12.0.2",
     "@servicestack/angular": "^0.0.15",
-    "@servicestack/client": "^1.0.57",
+    "@servicestack/client": "^1.1.10",
     "bootstrap": "^5.0.1",
     "core-js": "^3.13.0",
     "zone.js": "^0.11.4"
