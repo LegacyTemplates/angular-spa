@@ -6,6 +6,8 @@
 # Custom
 dist/
 coverage/
+.angular/
+wwwroot/
 
 # compiled output
 tmp/
