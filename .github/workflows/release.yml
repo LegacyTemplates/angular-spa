@@ -28,10 +28,10 @@ jobs:
       # Checkout latest or specific tag
       - name: checkout
         if: ${{ github.event.inputs.version == '' || github.event.inputs.version == 'latest' }}
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v3
       - name: checkout tag
         if: ${{ github.event.inputs.version != '' && github.event.inputs.version != 'latest' }}
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v3
         with:
           ref: refs/tags/${{ github.event.inputs.version }}
           
@@ -74,10 +74,10 @@ jobs:
       # Checkout latest or specific tag
       - name: checkout
         if: ${{ github.event.inputs.version == '' || github.event.inputs.version == 'latest' }}
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v3
       - name: checkout tag
         if: ${{ github.event.inputs.version != '' && github.event.inputs.version != 'latest' }}
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v3
         with:
           ref: refs/tags/${{ github.event.inputs.version }}
 
