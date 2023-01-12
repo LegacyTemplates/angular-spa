@@ -22,16 +22,16 @@ on:
 
 jobs:
   push_to_registry:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: ${{ github.event.workflow_run.conclusion != 'failure' }}
     steps:
       # Checkout latest or specific tag
       - name: checkout
         if: ${{ github.event.inputs.version == '' || github.event.inputs.version == 'latest' }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.3.0
       - name: checkout tag
         if: ${{ github.event.inputs.version != '' && github.event.inputs.version != 'latest' }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.3.0
         with:
           ref: refs/tags/${{ github.event.inputs.version }}
           
@@ -68,16 +68,16 @@ jobs:
   
   deploy_via_ssh:
     needs: push_to_registry
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: ${{ github.event.workflow_run.conclusion != 'failure' }}
     steps:
       # Checkout latest or specific tag
       - name: checkout
         if: ${{ github.event.inputs.version == '' || github.event.inputs.version == 'latest' }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.3.0
       - name: checkout tag
         if: ${{ github.event.inputs.version != '' && github.event.inputs.version != 'latest' }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.3.0
         with:
           ref: refs/tags/${{ github.event.inputs.version }}
 
