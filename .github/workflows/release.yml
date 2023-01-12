@@ -58,7 +58,7 @@ jobs:
       
       # Build and push new docker image, skip for manual redeploy other than 'latest'
       - name: Build and push Docker images
-        uses: docker/build-push-action@v2.2.2
+        uses: docker/build-push-action@v3
         if: ${{ github.event.inputs.version == '' || github.event.inputs.version == 'latest' }}
         with:
           file: Dockerfile
