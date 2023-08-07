@@ -17,9 +17,6 @@ body {
     border-radius: 0;
     background: $navbar-background !important;
 }
-a:not(.btn) {
-    color: $emphasis-text-color;
-}
 a.nav-link:hover {
     cursor: pointer;
 }
