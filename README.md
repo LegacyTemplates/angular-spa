@@ -2,9 +2,9 @@
 
 .NET 8.0 Angular project generated with [Angular CLI](https://github.com/angular/angular-spa).
 
-[![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-spa.png)](http://angular-spa.web-templates.io/)
+![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-spa.png)
 
-> Browse [source code](https://github.com/NetCoreTemplates/angular-spa), view live demo [angular-spa.web-templates.io](http://angular-spa.web-templates.io) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/NetCoreTemplates/angular-spa) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
 
     $ dotnet tool install -g x
 
