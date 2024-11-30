@@ -1,0 +1,20 @@
+<div class="spinner">
+    <mat-progress-spinner class="spinner" color="primary" [mode]="spinnerMode" *ngIf="spinnerMode == 'indeterminate'"></mat-progress-spinner>
+</div>
+
+<div class="login-panel">
+    <p class="auth-failed-text" *ngIf="authFailed">Неправильный логин или пароль</p>
+    <div>
+        <mat-input-container>
+            <label for="login">Логин:</label>
+            <input matInput type="text" [(ngModel)]="user.login" id="login">
+        </mat-input-container>
+    </div>
+    <div>
+        <mat-input-container>
+            <label for="password">Пароль:</label>
+            <input matInput type="password" [(ngModel)]="user.password" id="password" (keyup.enter)="login()">
+        </mat-input-container>
+    </div>
+    <button mat-raised-button color="primary" class="enter-button" (click)="login()">Войти</button>
+</div>

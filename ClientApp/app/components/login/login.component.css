@@ -1,0 +1,13 @@
+.login-panel {
+    margin-top: 32px;
+    margin-left: 56px;
+}
+
+.enter-button {
+    width: 200px;
+}
+
+.auth-failed-text {
+    color: tomato;
+    margin-top: 10px;
+}

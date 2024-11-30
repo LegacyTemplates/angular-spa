@@ -1,0 +1,21 @@
+<h3>app-home</h3>
+
+<div class="mat-elevation-z8">
+    <div>
+        <mat-form-field floatPlaceholder="never" class="filter-container">
+            <input matInput #filter placeholder="Filter">
+        </mat-form-field>
+    </div>
+
+    <mat-table #table [dataSource]="dataSource" matSort>
+
+        <ng-container matColumnDef="path">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Path </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.path.length > 0 ? element.path : '/'}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <paginator-panel [paginator]="paginator"></paginator-panel>
+</div>

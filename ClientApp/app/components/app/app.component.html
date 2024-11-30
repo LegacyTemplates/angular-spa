@@ -1,0 +1,41 @@
+<!-- <div class="spinner" *ngIf="isPlatformServer">
+    <mat-progress-spinner class="spinner" color="primary" [mode]="indeterminate"></mat-progress-spinner>
+</div> -->
+
+<div class='container-fluid' *ngIf="!isPlatformServer">
+    <mat-toolbar color="primary" class="fixed-top">
+        <button mat-icon-button (click)="goto('/')">
+            <mat-icon>home</mat-icon>
+        </button>
+        <div class="search-box-container" *ngIf="hasCurrentUser">
+            <!-- <input type="text" class="form-control search-box" placeholder="Поиск" aria-label="Number" matInput [matAutocomplete]="auto" [(ngModel)]="searchText" (keyup.enter)="search()">
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let search of searchHistory" [value]="search">
+                    {{ search }}
+                </mat-option>
+            </mat-autocomplete>
+            <button mat-icon-button color="primary" class="search-button" (click)="search()">
+                <mat-icon>search</mat-icon>
+            </button> -->
+        </div>
+        <button mat-icon-button (click)="goto('personal')" *ngIf="hasCurrentUser" matTooltip="Личный кабинет">
+            <mat-icon>person</mat-icon>
+        </button>
+        <button mat-button (click)="logout()" *ngIf="hasCurrentUser">
+            Выход
+        </button>
+    </mat-toolbar>
+
+    <mat-card id="sidenav" class="sidenav" [ngClass]="!hasCurrentUser ? 'collapse' : ''">
+        <router-outlet name="nav"></router-outlet>
+    </mat-card>
+
+    <div id="main" class="main container-fluid" [ngClass]="!hasCurrentUser ? 'expand' : ''">
+        <div *ngIf="hasCurrentUser">
+            <button mat-icon-button id="sidenavCollapse" class="btn btn-default sidenav-collapse-btn" (click)="sidenavCollapse()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+@import '../_theming.scss';
+
+@include mat-core();
+
+$custom-theme-primary: mat-palette($mat-green);
+$custom-theme-accent: mat-palette($mat-orange, A200, A100, A400);
+$custom-theme-warn: mat-palette($mat-red);
+
+$custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+
+@include angular-material-theme($custom-theme);

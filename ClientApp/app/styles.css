@@ -1,0 +1,31 @@
+﻿ @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+ /* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+ /* @import '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
+ /* @import '~@angular/material/prebuilt-themes/purple-green.css'; */
+ /* @import './themes/css/custom-theme.css'; */
+ 
+ body {
+     height: 100%;
+ }
+ 
+ mat-list-item a,
+ mat-list-item a:active,
+ mat-list-item a:visited,
+ mat-list-item a:focus,
+ mat-list-item a:visited:active {
+     height: 32px;
+     line-height: 32px;
+     color: rgba(0, 0, 0, .54);
+     text-decoration: none !important;
+ }
+ 
+ mat-list-item a:hover {
+     color: #3f51b5;
+     text-decoration: none;
+ }
+ 
+ .spinner {
+     position: fixed;
+     top: calc(50% - 50px);
+     left: calc(50% - 50px);
+ }
