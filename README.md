@@ -4,7 +4,7 @@
 
 ![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/angular-spa-bootstrap.png)
 
-> Browse [source code](https://github.com/NetCoreTemplates/angular-spa) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/LegacyTemplates/angular-spa) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
 
     $ dotnet tool install -g x
 
